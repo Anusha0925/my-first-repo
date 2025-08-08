@@ -1,32 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MoodMate - Daily Mood Tracker</title>
-  <link rel="stylesheet" href="styles.css"/>
+  <meta charset="UTF-8">
+  <title>Dream Travels</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f0f8ff;
+      color: #333;
+    }
+
+    header {
+      background: #1e90ff;
+      color: white;
+      text-align: center;
+      padding: 40px 10px;
+    }
+
+    nav {
+      background: #4682b4;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 30px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .destinations ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .destinations li {
+      margin: 10px 0;
+      padding: 10px;
+      background: #ffffff;
+      border-left: 6px solid #1e90ff;
+      border-radius: 5px;
+    }
+
+    footer {
+      background: #1e90ff;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <h1>MoodMate 😊</h1>
-    <p>How are you feeling today?</p>
 
-    <div class="mood-options">
-      <button data-mood="Happy">😊</button>
-      <button data-mood="Sad">😢</button>
-      <button data-mood="Angry">😡</button>
-      <button data-mood="Calm">😌</button>
-      <button data-mood="Excited">🤩</button>
-    </div>
+  <header>
+    <h1>Dream Travels ✈</h1>
+    <p>Explore the world with us!</p>
+  </header>
 
-    <textarea id="note" placeholder="Write a note (optional)"></textarea>
-    <button id="saveMood">Save Mood</button>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#destinations">Destinations</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-    <h2>This Week's Moods</h2>
-    <canvas id="moodChart" width="300" height="200"></canvas>
-  </div>
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Dream Travels helps you discover the most beautiful places on Earth. Whether it's a relaxing beach, a snowy mountain, or a vibrant city — we make your travel dreams come true!</p>
+  </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="script.js"></script>
+  <section id="destinations" class="destinations">
+    <h2>Top Destinations</h2>
+    <ul>
+      <li>🏖 Bali, Indonesia – Beaches and tropical vibes</li>
+      <li>🏔 Swiss Alps, Switzerland – Snowy adventures</li>
+      <li>🏙 Paris, France – The city of love</li>
+      <li>🌅 Maldives – Luxury and sunsets</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: travel@dreamtravels.com</p>
+    <p>Phone: +91 98765 43210</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Dream Travels. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
